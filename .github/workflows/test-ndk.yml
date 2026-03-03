@@ -16,4 +16,5 @@ jobs:
           path: android-ndk
       - name: Use NDK
         run: |
+          chmod -R +x android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/
           android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android30-clang --version
